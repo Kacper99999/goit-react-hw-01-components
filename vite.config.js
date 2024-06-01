@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   base: "/react-playground/",
   build: {
-    outDir: "./dist",
+    outDir: "https://github.com/Kacper99999/goit-react-hw-01-components",
   },
 });

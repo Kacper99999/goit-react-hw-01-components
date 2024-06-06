@@ -1,4 +1,6 @@
 import '/src/components/styles.css';
+import propTypes from "prop-types"
+
 function TransactionHistory({items}){
     return(
         <>
@@ -25,5 +27,9 @@ function TransactionHistory({items}){
         </>
     )
 }
+
+TransactionHistory.propTypes = {
+    items : propTypes.array
+};
 
 export default TransactionHistory;

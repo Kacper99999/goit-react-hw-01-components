@@ -1,4 +1,7 @@
+import { getSearchParamsForLocation } from 'react-router-dom/dist/dom';
 import '/src/components/styles.css';
+import propTypes from "prop-types"
+
 function Profile({username, tag, location, avatar, stats}){
     return(       
          <>
@@ -32,5 +35,13 @@ function Profile({username, tag, location, avatar, stats}){
         </>
     )
 }
+
+Profile.propTypes = {
+    username : propTypes.string,
+    tag : propTypes.string,
+    location : propTypes.string,
+    avatar : propTypes.string,
+    stats : propTypes.object
+};
 
 export default Profile;

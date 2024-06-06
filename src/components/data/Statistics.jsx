@@ -1,4 +1,5 @@
 import '/src/components/styles.css';
+import propTypes from "prop-types"
 
 
 function getRandomColor() {
@@ -28,5 +29,10 @@ function Statistics({ title, stats }) {
         </>
     )
   }
+
+  Statistics.propTypes = {
+    title : propTypes.string,
+    stats : propTypes.array
+  };
   
   export default Statistics;

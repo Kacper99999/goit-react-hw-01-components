@@ -1,4 +1,6 @@
 import '/src/components/styles.css';
+import propTypes from "prop-types"
+
 function FriendListItem({friends}){
     return(
         <>
@@ -18,5 +20,9 @@ function FriendListItem({friends}){
         </>
     )
 }
+
+FriendListItem.propTypes = {
+    friends : propTypes.array
+};
 
 export default FriendListItem;

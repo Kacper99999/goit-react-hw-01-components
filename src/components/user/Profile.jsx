@@ -1,4 +1,3 @@
-import { getSearchParamsForLocation } from 'react-router-dom/dist/dom';
 import '/src/components/styles.css';
 import propTypes from "prop-types"
 

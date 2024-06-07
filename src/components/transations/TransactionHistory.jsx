@@ -29,7 +29,14 @@ function TransactionHistory({items}){
 }
 
 TransactionHistory.propTypes = {
-    items : propTypes.array
+    items : propTypes.arrayOf(
+        propTypes.shape({
+            id : propTypes.string,
+            type : propTypes.string,
+            amount : propTypes.string,
+            currency : propTypes.string,
+        }),
+    ),
 };
 
 export default TransactionHistory;

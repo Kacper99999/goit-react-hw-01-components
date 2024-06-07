@@ -22,7 +22,14 @@ function FriendListItem({friends}){
 }
 
 FriendListItem.propTypes = {
-    friends : propTypes.array
+    friends : propTypes.arrayOf(
+        propTypes.shape({
+        avatar : propTypes.string,
+        name : propTypes.string,
+        isOnline : propTypes.bool,
+        id : propTypes.number,
+    }),
+    ),
 };
 
 export default FriendListItem;
